@@ -1,14 +1,19 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template: 9rem 4rem auto 12rem / auto;
+    grid-template: 13rem auto 12rem / auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   header {
+    display: grid;
+    grid-template: 9rem 4rem / auto;
     background: rgb(50, 50, 50);
     color: white;
     grid-column: 1 / 4;
+  }
+
+  header h3 {
     padding: 1rem;
   }
 
@@ -16,7 +21,6 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: black;
-    grid-column: 1 / 4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
