@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Cameron Burton</title>
+    <meta name="description" content="Cameron Burton's main page for the course WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="author" content="Cameron Burton">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer="true"></script>
 </head>
 <body>
-    <h1>WDD 131 - Cameron Burton</h1>
+    <header>
+        <h2>WDD 131: Dynamic Web Fundamentals - Cameron Burton</h2>
+        <nav class="navigation">
+            <a href="https://www.linkedin.com/in/cameronjb/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/4?lang=eng&id=p9#p9">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.JPG" alt="Cameron" width="200">
+            <p>My name is Cameron. I was born in Nevada, and raised in Utah where my family currently resides. I work as a sales representative for a residential solar installer, and currently live in the city of Orem, Utah. I served a mission for the Church of Jesus Christ of Latter-day Saints in Roseville, California from 2020-2022. I like to play guitar, mountain bike, and travel.</p>
+            <h2 class="home">Utah, USA</h2>
+            <figure>
+                <img src="images/flag.png" alt="Utah flag" width="250">
+                <figcaption>Official flag of Utah</figcaption>
+            </figure>
+            <p>Utah is a western U.S. state known for its unique landscapes, including vast deserts, mountain ranges, and spectacular national parks. It is a popular spot for hunting, fishing, and skiing among other outdoor activities. Utah is also part of the Four Corners region, where it meets Colorado, Arizona, and New Mexico at a single point.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <nav>
+                <ul class="resources">
+                    <li>
+                        <a href="https://www.khanacademy.org/">Khan Academy</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/">W3 Schools</a>
+                    </li>
+                    <li>
+                        <a href="https://code.org/">Code.org</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Cameron Burton | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
