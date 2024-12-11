@@ -8,7 +8,6 @@ header, footer {
     background-color: rgb(0, 77, 77);
     color: white;
     padding: .5rem;
-    padding-left: 2rem;
 }
 
 main {
@@ -30,6 +29,7 @@ figcaption {
 
 header {
     display: grid;
+    padding-left: 2rem;
 }
 
 #menu {
@@ -39,7 +39,7 @@ header {
 	color: white;
 	position: absolute;
 	top: 1.7rem;
-	right: 2rem;
+	right: 1rem;
 }
 
 #menu::before {
