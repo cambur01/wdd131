@@ -1,0 +1,83 @@
+body {
+    max-width: 140vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header, footer {
+    background-color: rgb(0, 77, 77);
+    color: white;
+    padding: .5rem;
+    padding-left: 2rem;
+}
+
+main {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+figure {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+figcaption {
+    color: rgb(0, 77, 77);
+}
+
+header {
+    display: grid;
+}
+
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1.7rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🆇";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.navigation a {
+    display: none;
+    margin: 2rem auto;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: lightyellow;
+}
+
+.open a {
+	display: block;
+}
+
+footer {
+    text-align: center;
+}
+
+#lastModified {
+    font-size: smaller;
+}

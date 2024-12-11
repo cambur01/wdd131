@@ -1,0 +1,19 @@
+@media screen and (min-width: 500px) {
+    .album {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    .navigation {
+    flex-direction: row;
+    grid-column: 2;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    #menu {
+		display: none;
+	}
+}
