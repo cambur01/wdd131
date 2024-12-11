@@ -30,7 +30,6 @@ figcaption {
 
 header {
     display: grid;
-    grid-template: 1fr 1fr;
 }
 
 #menu {
