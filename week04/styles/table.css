@@ -1,0 +1,43 @@
+:root {
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+    padding: 5px;
+}
+
+tr:first-child th, .corner {
+    background-color: black;
+    color: white;
+}
+
+th, td {
+    border: 1px solid rgba(0, 0, 0, 0.128);
+    font-size: larger;
+}
+
+th {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding: 10px 20px;
+}
+
+td {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
