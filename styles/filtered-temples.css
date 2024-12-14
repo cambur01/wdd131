@@ -17,6 +17,8 @@ main {
 
 figure {
     text-align: center;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgba(0, 0, 0, 0.076);
 }
 
 h2 {
@@ -25,6 +27,12 @@ h2 {
 
 figcaption {
     color: rgb(0, 77, 77);
+    font-size: smaller;
+}
+
+img {
+    margin: 1rem;
+    border: 1px solid lightgrey;
 }
 
 header {
