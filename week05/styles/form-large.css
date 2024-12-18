@@ -1,0 +1,8 @@
+@media (min-width: 500px) {
+    main {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}

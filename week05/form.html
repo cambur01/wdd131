@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form assignment for week 05 of WDD 131">
+    <meta name="author" content="Cameron Burton">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" id="review-form">
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rating">Overall Rating</label>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" name="rating" value="2" required> ☆☆</label>
+                    <label><input type="radio" name="rating" value="3" required> ☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4" required> ☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5" required> ☆☆☆☆☆</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="install-date">Date of Installation</label>
+                <input type="date" id="install-date" name="install-date" required>
+            </div>
+            <div class="form-group">
+                <label for="features">Which features did you find useful in the product?</label>
+                <div id="features">
+                    <label><input type="checkbox" name="features" value="Feature 1"> Durability</label>
+                    <label><input type="checkbox" name="features" value="Feature 2"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="Feature 3"> Performance</label>
+                    <label><input type="checkbox" name="features" value="Feature 4"> Design</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Cameron Burton | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
