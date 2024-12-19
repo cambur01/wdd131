@@ -1,3 +1,46 @@
-@media screen and (min-width: 500px) {
-    
+@media screen and (min-width: 600px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery figure {
+        margin: 1rem;
+        align-content: center;
+    }
+
+    .gallery img {
+        width: 80%;
+    }
+
+    .aboutpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #info, #story {
+        grid-column: 1;
+    }
+
+    #chooseus {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    #servicelist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #menu {
+		display: none;
+	}
 }

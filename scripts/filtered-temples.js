@@ -93,7 +93,8 @@ const temples = [
 	dedicated: "1877, April, 6-8",
 	area: 143969,
 	imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-thumb.jpg"
-}
+},
+
 ];
 
 createTempleCard(temples);

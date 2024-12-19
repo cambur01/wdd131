@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About BrightWave</title>
+    <meta name="description" content="About Us page for LED lighting website | Submission for WDD 131">">
+    <meta name="author" content="Cameron Burton">
+    <link rel="stylesheet" href="styles/led.css">
+    <link rel="stylesheet" href="styles/led-large.css">
+    <script src="scripts/led.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BrightWave LED Lighting Solutions</h1>
+            <button type="button" id="menu"></button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="aboutpage">
+            <div class="container" id="info">
+                <h2>About Us</h2>
+                <p>Welcome to BrightWave, a leading provider of permanent LED lighting solutions. We specialize in creating energy-efficient, high-performance lighting products that not only brighten spaces but also enhance their aesthetics, functionality, and sustainability. Our mission is to transform the way you experience light, offering innovative solutions for homes, businesses, and public spaces that provide long-lasting benefits for both the environment and your bottom line.</p>
+            </div>
+            <div class="container" id="story">
+                <h3>Our Story</h3>
+                <p>Founded in 2020, BrightWave was born out of a passion for combining cutting-edge LED technology with exceptional design. With a focus on sustainability, energy efficiency, and superior lighting quality, our team has grown into an industry leader. From custom residential lighting to large-scale commercial projects, we take pride in offering tailored solutions that meet the unique needs of each client.</p>
+            </div>
+            <div class="container" id="chooseus">
+                <h3>Why Choose Us?</h3>
+                <ul class="why">
+                    <li><b>Sustainability:</b> Our LED products are eco-friendly, energy-efficient, and free from harmful chemicals. By choosing us, you contribute to a greener future while enjoying the benefits of reduced energy consumption and waste.</li>
+                    <li><b>Expertise & Experience:</b> With years of experience in the lighting industry, our team of designers and engineers is committed to providing top-notch service and creative, effective solutions that bring your vision to life.</li>
+                    <li><b>Durability:</b> Our permanent LED lighting solutions are built to last. Designed with high-quality components, they are durable enough for both indoor and outdoor applications, ensuring reliable performance for years to come.</li>
+                    <li><b>Customer-Centric Service:</b> From consultation to installation and beyond, we prioritize your satisfaction. Our team works closely with you to ensure your project is completed on time, on budget, and to your exact specifications.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Interested in our services? Fill out the form below to schedule a free consultation!</p>
+                <form id="contactForm" action="javascript:void(0);" method="post">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <p id="formStatus"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BrightWave LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

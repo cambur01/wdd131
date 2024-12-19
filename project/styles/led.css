@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
 }
@@ -21,20 +21,49 @@ header h1 {
     text-align: center;
 }
 
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 11.2rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🆇";
+}
+
+.open li {
+	display: block;
+}
+
 nav ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     list-style: none;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 1rem;
+    display: none;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .hero {
@@ -51,7 +80,7 @@ nav ul li a {
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 }
 
 .cta-button {
@@ -61,6 +90,28 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.gallery {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.gallery figure {
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgba(0, 0, 0, 0.076);
+}
+
+.gallery img {
+    margin: 1rem;
+    border: 1px solid lightgrey;
+    width: 90%;
 }
 
 .about {
@@ -76,6 +127,8 @@ nav ul li a {
 
 .services {
     padding: 50px 0;
+    background-color: #1b6682;
+    color: #fff;
 }
 
 .services h2 {
@@ -86,16 +139,18 @@ nav ul li a {
 
 .service-item {
     text-align: center;
-    margin-bottom: 30px;
+    background-color: #164455;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: .5rem;
+    margin: .5rem;
 }
 
 .service-item h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .service-item p {
-    color: #555;
     font-size: 1.1rem;
 }
 
@@ -135,9 +190,48 @@ nav ul li a {
     background-color: #e65c00;
 }
 
+#formStatus {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: green;
+}
+
 footer {
     background-color: #3eabd3;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+.aboutpage {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.aboutpage p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.aboutpage h2 {
+    font-size: 2rem;
+}
+
+.aboutpage h3 {
+    font-size: 1.5rem;
+}
+
+.why {
+    padding: 1rem 2rem;
+}
+
+.why li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#chooseus {
+    background-color: #f4f4f4;
+    border: 1px solid grey;
 }

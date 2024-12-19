@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Permanent LED Lighting</title>
-    <meta name="description" content="Permanent LED Lighting Solutions for Homes and Businesses">
-    <meta author="Cameron Burton">
+    <title>BrightWave Services</title>
+    <meta name="description" content="Page laying out services for LED lighting business | Submission for WDD 131">">
+    <meta name="author" content="Cameron Burton">
     <link rel="stylesheet" href="styles/led.css">
+    <link rel="stylesheet" href="styles/led-large.css">
+    <script src="scripts/led.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Permanent LED Lighting Solutions</h1>
+            <h1>BrightWave LED Lighting Solutions</h1>
+            <button type="button" id="menu"></button>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>Brighten Your Space, Anytime, Anywhere</h2>
-                <p>Explore our permanent LED lighting solutions for both residential and commercial spaces.</p>
-                <a href="#contact" class="cta-button">Get a Free Consultation</a>
-            </div>
-        </section>
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>We provide high-quality, energy-efficient LED lighting solutions that last for years. Our professional team specializes in custom installation and design to meet your specific needs.</p>
-            </div>
-        </section>
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Our Services</h2>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="container" id="servicelist">
                 <div class="service-item">
                     <h3>Residential Lighting</h3>
                     <p>From accent lighting to complete home lighting designs, we offer everything you need to brighten your living space.</p>
@@ -58,19 +52,20 @@
             <div class="container">
                 <h2>Contact Us</h2>
                 <p>Interested in our services? Fill out the form below to schedule a free consultation!</p>
-                <form>
+                <form id="contactForm" action="javascript:void(0);" method="post">
                     <input type="text" id="name" placeholder="Your Name" required>
                     <input type="email" id="email" placeholder="Your Email" required>
                     <textarea id="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Send Message</button>
                 </form>
+                <p id="formStatus"></p>
             </div>
         </section>
     </main>
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 Permanent LED Lighting. All Rights Reserved.</p>
+            <p>&copy; 2024 BrightWave LLC. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
